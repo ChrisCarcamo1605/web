@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+$background: #fafbff;
+$button-width: 258px;
+$border-radius: 11px;
+
+html {
+  font-family: "Fredoka One", cursive;
+  background-color: $background;
+}
+
+
+
+
+.click-btn {
+  display: flex;
+  max-height: 80px;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  line-height: 35px;
+  border: 1px solid;
+  border-radius: $border-radius;
+  margin-top: 60px;
+  max-height: 80px;
+  padding: 20px;
+  width: 300px;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: Raleway;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.35s;
+  box-sizing: border-box;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.updating {
+  margin: 3em;
+  text-align: center;
+}
+
+
+.btn-style5 {
+  $btn-color: #000000;
+  background-color: #070707a1;
+  $btn-hover-color: #9c000f;
+  $offset: 0.3em;
+  border-color: ffffff;
+  color: #ffffff;
+  box-shadow: $offset $offset 0 $btn-hover-color;
+  &:hover {
+    box-shadow: (-$offset) (-$offset) 0 #ffffffc0;
+    background-color: #f10a21c0;
+    border-color: #000000;
+    color: #ffffff;
+  }
+}
