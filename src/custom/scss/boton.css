@@ -25,6 +25,16 @@ html {
   transition: all 0.35s;
   box-sizing: border-box;
 }
+@media (max-width: 480px) {
+  .click-btn {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 80px;
+    max-height: 80px;
+    padding: 20px;
+    width: 200px;
+  }
+}
 
 .buttons-wrapper {
   display: flex;
