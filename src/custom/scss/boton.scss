@@ -44,6 +44,39 @@ html {
 }
 }
 
+.viewMoreBtn {
+  display: flex;
+  max-height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem;
+  line-height: 35px;
+  border: 1px solid;
+  border-radius: $border-radius;
+  margin-top: 5px;
+
+  padding: 20px;
+  width: 160px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Raleway;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.35s;
+  box-sizing: border-box;
+
+  @media (max-width: 480px) {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 80px;
+    max-height: 80px;
+    padding: 20px;
+    width: 200px;
+    
+}
+}
+
+
 .buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -67,6 +100,23 @@ html {
     box-shadow: (-$offset) (-$offset) 0 #ffffffc0;
     background-color: #f10a21c0;
     border-color: #000000;
+    color: #ffffff;
+  }
+  
+}
+
+.btn-ViewMorestyle5 {
+  $btn-color: #070707;
+  background-color: #c50014;
+  $btn-hover-color: #070707;
+  $offset: 0.3em;
+  border-color: ffffff;
+  color: #ffffff;
+  box-shadow: $offset $offset 0 $btn-hover-color;
+  &:hover {
+    box-shadow: (-$offset) (-$offset) 0 #c50014;
+    background-color: #000000;
+    border-color: #9c000f;
     color: #ffffff;
   }
   

@@ -36,6 +36,37 @@ html {
   }
 }
 
+.viewMoreBtn {
+  display: flex;
+  max-height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem;
+  line-height: 35px;
+  border: 1px solid;
+  border-radius: 11px;
+  margin-top: 5px;
+  padding: 20px;
+  width: 160px;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Raleway;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.35s;
+  box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .viewMoreBtn {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 80px;
+    max-height: 80px;
+    padding: 20px;
+    width: 200px;
+  }
+}
+
 .buttons-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -56,5 +87,18 @@ html {
   box-shadow: -0.3em -0.3em 0 rgba(255, 255, 255, 0.7529411765);
   background-color: rgba(241, 10, 33, 0.7529411765);
   border-color: #000000;
+  color: #ffffff;
+}
+
+.btn-ViewMorestyle5 {
+  background-color: #c50014;
+  border-color: ffffff;
+  color: #ffffff;
+  box-shadow: 0.3em 0.3em 0 #070707;
+}
+.btn-ViewMorestyle5:hover {
+  box-shadow: -0.3em -0.3em 0 #c50014;
+  background-color: #000000;
+  border-color: #9c000f;
   color: #ffffff;
 }/*# sourceMappingURL=boton.css.map */

@@ -81,8 +81,6 @@
     transition: transform 1.9s ease, filter 1.9s ease;
     filter: grayscale(70%);
 
-
-
 }
 
 .lenguageIcons:hover {
@@ -220,3 +218,43 @@
     }
 }
 
+.btnModal{
+    
+        display: flex;
+        max-height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+        line-height: 35px;
+        border: 1px solid;
+        padding: 20px;
+        width: 100px;
+        background-color: #d1061b;
+        color: #fff;
+        font-size: 15px;
+        font-family: Raleway;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.35s;
+        box-sizing: border-box;
+        transition: background-color 1.15s ease,transform 0.3s ease;
+      
+        @media (max-width: 480px) {
+          font-size: 20px;
+          margin-top: 30px;
+          margin-left: 80px;
+          max-height: 80px;
+          padding: 20px;
+          width: 200px;
+          
+      }
+      
+}
+
+.btnModal:hover{
+
+    transform: scale(1.05);
+    background-color: #f81e25;
+    
+  
+}
