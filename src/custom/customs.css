@@ -78,16 +78,21 @@
     max-width: 150px;
     max-height: 150px;
     min-height: 100px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    filter: grayscale(100%);
+    transition: transform 1.9s ease, filter 1.9s ease;
+    filter: grayscale(70%);
 
 
 
 }
 
 .lenguageIcons:hover {
-    transform: scale(1.15);
-    filter: grayscale(0%);
+    transform: scale(1.22);
+    filter: grayscale(00%);
+}
+
+.lenguageIcons.active {
+    transform: scale(1.1);
+    filter: grayscale(15%);
 }
 
 
@@ -197,22 +202,21 @@
 .littleIcons {
     max-width: 50px;
     max-height: 50px;
-  
     transition: transform 0.3s ease, filter 0.3s ease;
     filter: grayscale(100%);
+    cursor: pointer;
+}
 
-    @media (max-width: 480px) {
-        
-        
+.littleIcons.active {
+    transform: scale(1.24);
+    filter: grayscale(0%);
+}
+
+@media (max-width: 480px) {
+    .littleIcons {
         width: 86px;
         max-height: 26px;
         min-height: 25px;
-
     }
-
 }
 
-.littleIcons:hover {
-    transform: scale(1.35);
-    
-}
