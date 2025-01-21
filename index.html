@@ -2,12 +2,13 @@
 <html lang="es">
 
 <head>
+    <link href="src/custom/scss/boton.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Christian Web</title>
     <link href="src/css/bootstrap.css" rel="stylesheet">
     <link href="src/custom/customs.css" rel="stylesheet">
-    <link href="src/custom/scss/boton.css" rel="stylesheet">
+    
 
 
 
@@ -17,6 +18,15 @@
 </head>
 
 <body class="bg-black">
+
+    <div id="TraslateButton" class="fixed-top ">
+        <a href="#" class="animated-button1 " id="language-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
     <div id="particles-js"> </div>
 
 
@@ -56,14 +66,14 @@
         <div class="col-lg-6 col-md-12  col-12 principalText">
             <h1 class="">&lt;Christian Carcamo/&gt;</h1>
 
-            <h2>Back-end Developer</h2>
+            <h2 data-translate="developer-title">Back-end Developer</h2>
             <div class="descripcion">
-                <p>Soy un desarrollador backend familiarizado con tecnologías como Spring y
+                <p data-translate="developer-desc">Soy un desarrollador backend familiarizado con tecnologías como Spring y
                     .NET Core. He desarrollado APIs utilizando JWT para la autenticación de
                     las mismas, así como aplicaciones de escritorio con servicios de correo electrónico.</p>
             </div>
 
-            <div><a class="click-btn btn-style5 mt-sm-5" href="src/files/CV Christian Carcamo.pdf"
+            <div><a data-translate="download-cv" class="click-btn btn-style5 mt-sm-5" href="src/files/CV Christian Carcamo.pdf"
                     download="ChristianCarcamoCV" target="_blank">DESCARGAR CV</a></div>
 
         </div>
@@ -100,7 +110,7 @@
     </div>
 
     <div class="container-fluid" style="background-image: url('src/img/WallpaperRed.png');">
-        <h1 class="text-center text-light pt-3">Experiencia</h1>
+        <h1  data-translate="experience" class="text-center text-light pt-3">Experiencia</h1>
 
         <div class="modal fade" id="PlModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -140,7 +150,7 @@
                     <div class="modal-footer z-2 btn-outline-success">
 
                         <a href="https://github.com/ChrisCarcamo1605/PollosHermanosEscritorio" target="_blank">
-                            <button type="button" class="btn fs-5  btn-outline-dark align-items-center ">
+                            <button data-translate="github-btn" type="button" class="btn fs-5  btn-outline-dark align-items-center ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-github" viewBox="0 0 16 16">
                                     <path
@@ -151,7 +161,7 @@
                             </button>
                         </a>
 
-                        <button type="button" class="fs-5 rounded-3 btn btn-outline-danger"
+                        <button data-translate="cerrar-btn" type="button" class="fs-5 rounded-3 btn btn-outline-danger"
                             data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
@@ -194,7 +204,7 @@
                     <div class="modal-footer z-2 btn-outline-success">
 
                         <a href="https://github.com/ChrisCarcamo1605/LaTiendona" target="_blank">
-                            <button type="button" class="btn fs-5  btn-outline-dark align-items-center ">
+                            <button data-translate="github-btn" type="button" class="btn fs-5  btn-outline-dark align-items-center ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-github" viewBox="0 0 16 16">
                                     <path
@@ -205,7 +215,7 @@
                             </button>
                         </a>
 
-                        <button type="button" class="fs-5 rounded-3 btn btn-outline-danger"
+                        <button data-translate="cerrar-btn" type="button" class="fs-5 rounded-3 btn btn-outline-danger"
                             data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
@@ -249,7 +259,7 @@
                     <div class="modal-footer z-2 btn-outline-success">
 
                         <a href="https://github.com/ChrisCarcamo1605/VeterinariaWeb" target="_blank">
-                            <button type="button" class="btn fs-5  btn-outline-dark align-items-center ">
+                            <button data-translate="github-btn" type="button" class="btn fs-5  btn-outline-dark align-items-center ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-github" viewBox="0 0 16 16">
                                     <path
@@ -260,7 +270,7 @@
                             </button>
                         </a>
 
-                        <button type="button" class="fs-5 rounded-3 btn btn-outline-danger"
+                        <button data-translate="cerrar-btn" type="button" class="fs-5 rounded-3 btn btn-outline-danger"
                             data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
@@ -275,19 +285,19 @@
                     <div id="CApiCarousel" class="carousel slide" data-bs-touch="false">
                         <div class="carousel-inner">
                             <div class="carousel-item  imgCarrousel active p-5">
-                                <img src="src/img/projectImg/PollosHermanosDesktop.png" class="d-block w-100" alt="...">
+                                <img src="src/img/projectImg/CApiLogin.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item  imgCarrousel">
-                                <img src="src/img/projectImg/PhMesasMenu.png" class="d-block w-100" alt="...">
+                                <img src="src/img/projectImg/CApiMedicoController.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item  imgCarrousel">
-                                <img src="src/img/projectImg/PhPedidoMenu.png" class="d-block w-100" alt="...">
+                                <img src="src/img/projectImg/CApiSecurityConfig.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item  imgCarrousel">
-                                <img src="src/img/projectImg/PhAEmpleadosMenu.png" class="d-block w-100" alt="...">
+                                <img src="src/img/projectImg/CApiSecurityFilterConfig.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item  imgCarrousel">
-                                <img src="src/img/projectImg/PhAdminMenu.png" class="d-block w-100" alt="...">
+                                <img src="src/img/projectImg/CApiTokenService.png" class="d-block w-100" alt="...">
                             </div>
                         </div>
 
@@ -304,8 +314,8 @@
                     </div>
                     <div class="modal-footer z-2 btn-outline-success">
 
-                        <a href="https://github.com/ChrisCarcamo1605/PollosHermanosEscritorio" target="_blank">
-                            <button type="button" class="btn fs-5  btn-outline-dark align-items-center ">
+                        <a href="https://github.com/ChrisCarcamo1605/ClinicaApi" target="_blank">
+                            <button data-translate="github-btn" type="button" class="btn fs-5  btn-outline-dark align-items-center ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-github" viewBox="0 0 16 16">
                                     <path
@@ -316,7 +326,7 @@
                             </button>
                         </a>
 
-                        <button type="button" class="fs-5 rounded-3 btn btn-outline-danger"
+                        <button data-translate="cerrar-btn" type="button" class="fs-5 rounded-3 btn btn-outline-danger"
                             data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
@@ -333,8 +343,8 @@
                             <img src="src/img/ClinicaAPI.png" class="card-img-top pt-3 align-items-center" alt="...">
                         </div>
                         <div class="card-body  mx-3">
-                            <h3 class="card-title">Clinica Api</h3>
-                            <p class="card-text pt-3">Utilizando Spring Boot, desarrollé una API para gestionar médicos,
+                            <h3  class="card-title">Clinica Api</h3>
+                            <p data-translate="clinica-desc"  class="card-text pt-3">Utilizando Spring Boot, desarrollé una API para gestionar médicos,
                                 pacientes y citas. Para el sistema de citas, creé una clase como servicio para aplicar
                                 las reglas de negocio al código. Implementé Flyway Migration para el control de
                                 migraciones
@@ -348,8 +358,8 @@
                                     DAOs,
                                     Flyway, JWT</small></p>
                             <div class="d-flex">
-                                <button type="button" class="viewMoreBtn btn-ViewMorestyle5 " data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
+                                <button data-translate="view-more" type="button" class="viewMoreBtn btn-ViewMorestyle5 " data-bs-toggle="modal"
+                                    data-bs-target="#CApiModal">
                                     View More...
                                 </button>
                                 <div class="ms-auto mt-2">
@@ -376,7 +386,7 @@
 
                         <div class="card-body mx-3">
                             <h3 class="card-title">La Tiendona</h3>
-                            <p class="card-text pt-3">Fue desarrollado con el objetivo de gestionar un inventario para
+                            <p data-translate="tiendona-desc"  class="card-text pt-3">Fue desarrollado con el objetivo de gestionar un inventario para
                                 un minimercado,
                                 permitiendo que distintas personas lo monitoreen desde diferentes ubicaciones. Utilicé
                                 Java Swing para
@@ -388,7 +398,7 @@
                             <p class="card-text"><small class="text-body-secondary fw-bold">Java, Swing,
                                     JavaMail</small></p>
                             <div class="d-flex">
-                                <button type="button" class="viewMoreBtn btn-ViewMorestyle5 " data-bs-toggle="modal"
+                                <button data-translate="view-more" type="button" class="viewMoreBtn btn-ViewMorestyle5 " data-bs-toggle="modal"
                                     data-bs-target="#LtModal">
                                     View More...
                                 </button>
@@ -415,7 +425,7 @@
                         </div>
                         <div class="card-body mx-3">
                             <h3 class="card-title">Pollos Hermanos Restaurante</h3>
-                            <p class="card-text pt-3">Desarrollé una aplicación en Windows Forms utilizando C# con
+                            <p data-translate="pollos-desc"  class="card-text pt-3">Desarrollé una aplicación en Windows Forms utilizando C# con
                                 temática de
                                 "Pollos Hermanos", diseñada para empleados en caja en un restaurante de comida rápida.
                                 La aplicación
@@ -428,7 +438,7 @@
                             <p class="card-text"><small class="text-body-secondary fw-bold">C#, Windows Forms</small>
                             </p>
                             <div class="d-flex">
-                                <button type="button" class="viewMoreBtn btn-ViewMorestyle5 " data-bs-toggle="modal"
+                                <button data-translate="view-more" type="button" class="viewMoreBtn btn-ViewMorestyle5 " data-bs-toggle="modal"
                                     data-bs-target="#PlModal">
                                     View More...
                                 </button>
@@ -455,7 +465,7 @@
                         </div>
                         <div class="card-body mx-3">
                             <h3 class="card-title">Veterinaria Web</h3>
-                            <p class="card-text pt-3">Desarrollé una aplicación web utilizando Spring MVC. Usé Thymeleaf
+                            <p data-translate="vet-desc"  class="card-text pt-3">Desarrollé una aplicación web utilizando Spring MVC. Usé Thymeleaf
                                 para conectar el backend con el frontend. La aplicación incluye un sistema de inicio de
                                 sesión con JWT para la
                                 autenticación de usuarios y utiliza Spring Email para la recuperación de contraseñas.
@@ -466,11 +476,11 @@
                                     Migration, Thymeleaf, JavaScript, Spring Email</small></p>
 
                             <div class="d-flex">
-                                <button type="button" class="viewMoreBtn btn-ViewMorestyle5 " data-bs-toggle="modal"
+                                <button data-translate="view-more" type="button" class="viewMoreBtn btn-ViewMorestyle5 " data-bs-toggle="modal"
                                     data-bs-target="#VwModal">
                                     View More...
                                 </button>
-                                <div class="ms-auto mt-2">
+                                <div  class="ms-auto mt-2">
                                     <a href="https://github.com/ChrisCarcamo1605/VeterinariaWeb" target="_blank"
                                         title="Ver en GitHub">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="black"
@@ -486,6 +496,7 @@
                 </div>
             </div>
         </div>
+        <div class="pt-5"></div>
     </div>
 
 
@@ -525,6 +536,7 @@
     </script>
 
     <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/traslate.js"></script>
     <script src="src/js/particles.min.js"></script>
     <script src="src/js/app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
