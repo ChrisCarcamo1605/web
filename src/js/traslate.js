@@ -54,6 +54,8 @@ function initTranslation() {
 
     function updateButtonText(language) {
         const buttonElement = document.querySelector('#language-button');
+
+
         if (buttonElement) {
             buttonElement.childNodes[4].textContent = language === 'es' ? 'English' : 'Español';
         }

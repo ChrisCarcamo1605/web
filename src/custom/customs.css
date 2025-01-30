@@ -81,6 +81,13 @@
     transition: transform 1.9s ease, filter 1.9s ease;
     filter: grayscale(70%);
 
+    @media (max-width: 480px) {
+        max-width: 120px;
+        max-height: 120px;
+   
+
+    }
+
 }
 
 .lenguageIcons:hover {
@@ -134,7 +141,8 @@
     margin-right: 30px;
 
     @media (max-width: 480px) {
-        margin: 15px 46px;
+        padding: 10px;
+        margin: 15px auto;
         max-width: 100%;
         justify-content: center;
 
@@ -175,7 +183,7 @@
     font-size: 18px;
     color: #c9c3c3;
     justify-content: center;
-    width: 90%;
+    width: 100%;
 
 }
 
@@ -199,7 +207,7 @@
 
 .littleIcons {
     max-width: 50px;
-    max-height: 50px;
+    height: 50px;
     transition: transform 0.3s ease, filter 0.3s ease;
     filter: grayscale(100%);
     cursor: pointer;
@@ -212,9 +220,10 @@
 
 @media (max-width: 480px) {
     .littleIcons {
-        width: 86px;
-        max-height: 26px;
-        min-height: 25px;
+        max-width: 60px;
+        max-height: 50px;
+        align-content: center;
+        
     }
 }
 
@@ -263,4 +272,33 @@
 .TraslateButton{
     position: fixed;
     z-index: 5;
+
+    @media (max-width: 480px) {
+        position:fixed;
+        bottom: 0;
+        left: 80%;
+        transform: translateX(-50%);
+        
+    }
 }
+
+.customCard h3{
+    @media (max-width: 480px) {
+    font-size:35px;
+    }
+}
+
+.carousel-item{
+
+    @media (max-width: 480px) {
+    height: 220px;
+    align-items: center;
+    }
+}
+
+.card-text{
+    @media (max-width: 480px) {
+        font-size:15px;
+        }
+} 
+
